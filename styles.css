@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    text-align: center;
+
+  }
+  
+  .container_tache {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    background-color: #e9e8e1;
+
+  }
+  
+  #inputtache {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  #btn{
+    width: 30%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #btn:hover {
+    background-color: #aea74c;
+  }
+  
+  #tachelist {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+.tache_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #cecf91;
+  }
+  
+  .tache_item button {
+    padding: 5px 10px;
+    background-color: #ff4d4d; /* Couleur rouge pour le bouton de suppression */
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tache_item button:hover {
+    background-color: #ff1a1a; /* Couleur plus foncée au survol */
+  }
+  h1{
+    color: rgb(212, 204, 204);
+    text-align: center;
+    background-color: rgb(29, 29, 43);
+    width: 100%;
+    
+  }
+  h2{
+    color: rgb(212, 204, 204);
+    text-align: center;
+    background-color: rgb(184, 144, 69);
+  }
+  .Taches_complété{
+    color: rgb(212, 204, 204);
+    text-align: center;
+    background-color: rgb(255, 2, 2);
+  }
+  .btn_valide{
+    width: 15%;
+    padding: 2px;
+    background-color: #5c72b8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn_Supp{
+    width: 15%;
+    padding: 2px;
+    background-color: #5c72b8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn_Supp2{
+    width: 15%;
+    padding: 2px;
+    background-color: #b85c68;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  #tachelist2 {
+    list-style-type: none;
+    padding: 0;
+  }
+  #tachelist2 li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    border-bottom: 1px solid #1d1818;
+    background-color: #eff5d6;
+  }
