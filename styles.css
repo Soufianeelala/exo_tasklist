@@ -84,6 +84,7 @@ body {
     text-align: center;
     background-color: rgb(255, 2, 2);
   }
+  
   .btn_valide{
     width: 15%;
     padding: 2px;
@@ -93,6 +94,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
+  
   .btn_Supp{
     width: 15%;
     padding: 2px;
@@ -102,6 +104,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
+ 
   .btn_Supp2{
     width: 15%;
     padding: 2px;
@@ -112,6 +115,18 @@ body {
     cursor: pointer;
     margin-left: 20px;
   }
+
+  .btn_encours{
+    width: 15%;
+    padding: 2px;
+    background-color: #c0960c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
   #tachelist2 {
     list-style-type: none;
     padding: 0;

@@ -7,7 +7,7 @@ const table =[];
 
   // Sélectionne l'élément <ul> avec l'ID "tachelist2"
   const tacheList2 = document.getElementById("tachelist2");
-
+// Charger les tâches depuis le localStorage au démarrage
 function addtache(){
     const inputtache = document.getElementById("inputtache");
     const tachetext = inputtache.value.trim();
@@ -31,9 +31,8 @@ function addtache(){
      deleteBtn.classList.add("btn_Supp");
      deleteBtn.innerText = "Supprimer";
      deleteBtn.onclick = function () {
-        tacheItem.remove();
+     tacheItem.remove();
     };
-
     
      // Bouton de validation
     const valideBtn = document.createElement("btn_valide") ;
@@ -51,16 +50,32 @@ function addtache(){
         
         tacheList2.appendChild(newTachItem);
         tacheList1.removeChild(tacheItem);
+
+
+        // boutton en cours
+        const encoursBtn = document.createElement('button')    ;
+        encoursBtn.classList.add('btn_encours');
+        encoursBtn.innerText = "En Cours";
+        encoursBtn.onclick = function (){
+            
+            tacheList2.removeChild(newTachItem);
+            tacheList1.appendChild(tacheItem);
+        }
         
+             // Bouton de supprimer 2
+
         const deleteBtn2 = document.createElement("btn_S2");
         deleteBtn2.classList.add("btn_Supp2");
         deleteBtn2.innerText = "Supprimer";
         deleteBtn2.onclick = function () {
         newTachItem.remove();
      }
+
+        newTachItem.appendChild(encoursBtn);
         newTachItem.appendChild(deleteBtn2);
 
     }
+    
         tacheList1.appendChild(tacheItem);
         // Ajoute le bouton de suppression à la tâche
          tacheItem.appendChild(deleteBtn);
